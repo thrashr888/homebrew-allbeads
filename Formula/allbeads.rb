@@ -31,29 +31,29 @@ class Allbeads < Formula
   end
 
   def install
-    bin.install Dir["allbeads*"].first => "ab"
+    bin.install Dir["allbeads*"].first => "allbeads"
   end
 
   def caveats
     <<~EOS
-      AllBeads has been installed as 'ab'.
+      AllBeads has been installed as 'allbeads'.
+
+      To use the shorter 'ab' alias, add to your shell config:
+        alias ab='allbeads'
+
+      Note: /usr/sbin/ab is Apache Bench, so we don't override it.
 
       Quick start:
-        ab init                  # Initialize configuration
-        ab context add           # Add current repo as context
-        ab stats                 # View aggregated statistics
-        ab tui                   # Launch interactive dashboard
-
-      For AI agents:
-        ab quickstart            # Quick start guide
-        ab prime                 # Prime agent context
-        ab info                  # Project overview
+        allbeads init            # Initialize configuration
+        allbeads context add     # Add current repo as context
+        allbeads stats           # View aggregated statistics
+        allbeads tui             # Launch interactive dashboard
 
       Documentation: https://github.com/thrashr888/AllBeads
     EOS
   end
 
   test do
-    system "#{bin}/ab", "--version"
+    system "#{bin}/allbeads", "--version"
   end
 end
