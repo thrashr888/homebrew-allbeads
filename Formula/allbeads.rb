@@ -1,12 +1,6 @@
 # Homebrew formula for AllBeads
-# To use this formula, create a tap repository and copy this file there.
-#
-# Example tap setup:
-#   1. Create a repository named "homebrew-allbeads" on GitHub
-#   2. Add this file as Formula/allbeads.rb
-#   3. Users install with: brew tap thrashr888/allbeads && brew install allbeads
-#
-# Update the VERSION and SHA256 values when releasing a new version.
+# Install: brew tap thrashr888/allbeads && brew install allbeads
+# Update SHA256 values when releasing a new version.
 
 class Allbeads < Formula
   desc "Distributed protocol for agentic orchestration and communication"
@@ -17,22 +11,22 @@ class Allbeads < Formula
   on_macos do
     on_arm do
       url "https://github.com/thrashr888/AllBeads/releases/download/v#{version}/allbeads-macos-aarch64"
-      sha256 "0416bb566e0705f71b06cabe1fc7c027525617d6390792e37d44ce5bf347f2f6"
+      sha256 "5a7980d6b2824bb8cff0553316c13721bf7a42027e9b3b38e7154d95b9df5219"
     end
     on_intel do
       url "https://github.com/thrashr888/AllBeads/releases/download/v#{version}/allbeads-macos-x86_64"
-      sha256 "25c0d72f4fee09dc59bfd4b1c8aaa39fe629877251631c40956de43e6ad1248a"
+      sha256 "9e7c73a2fb63a499c9edbcbee920d757e0307381167347d929f5df6b7011f856"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/thrashr888/AllBeads/releases/download/v#{version}/allbeads-linux-aarch64"
-      sha256 "49ac022e18679b806f1dce6fdc5594c14151fcee31ba88831f8cbf25cccc692c"
+      sha256 "be7ae1e880b328d76b89d45ec244c30d59a19fcb2e36fa94e0849647102a9b87"
     end
     on_intel do
       url "https://github.com/thrashr888/AllBeads/releases/download/v#{version}/allbeads-linux-x86_64"
-      sha256 "258ff2c11adcfd78910f63ea3ee356d4228e5f60f654324d9dae3c59f530d3b6"
+      sha256 "5c71473d12f77d27921c4380f3a1ce8d9500f3bee09325db6a2e64976e4ca8f0"
     end
   end
 
