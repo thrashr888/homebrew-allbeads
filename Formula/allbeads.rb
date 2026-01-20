@@ -5,28 +5,28 @@
 class Allbeads < Formula
   desc "Distributed protocol for agentic orchestration and communication"
   homepage "https://github.com/thrashr888/AllBeads"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/thrashr888/AllBeads/releases/download/v#{version}/allbeads-macos-aarch64"
-      sha256 "bdb9edcd1f8a159ec1aba9fe8d54c7953b47fe70a246fcadde2942b5b0af8a29"
+      sha256 "78de3534323b19664e5208a96e136c1a26255efd6133934aadf4549b29450ba0"
     end
     on_intel do
       url "https://github.com/thrashr888/AllBeads/releases/download/v#{version}/allbeads-macos-x86_64"
-      sha256 "7f464995cb6081fc066f8913adba8c5f83ccdac1ea2c7f86681f42436defa84c"
+      sha256 "28465eee2da992b358cc8e399497f10445ccc58bb12e6362a48496ad83f21fb8"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/thrashr888/AllBeads/releases/download/v#{version}/allbeads-linux-aarch64"
-      sha256 "009ca3fb307d764ef15df5deb1532893ec3efd962ec37e46a79d0e032eb5f32f"
+      sha256 "70cb79ae7818619847a8c9a1a7587fbf009e481d3dd8ad8182c00d4b002ba21d"
     end
     on_intel do
       url "https://github.com/thrashr888/AllBeads/releases/download/v#{version}/allbeads-linux-x86_64"
-      sha256 "4f33ec00b5c7293afb8abad68e5c61d36378b56fd485a47387778ac1c9cc353e"
+      sha256 "a4af55166d84c377746d324889f14ec80d5112937554dc0cdaaa92090a4e542b"
     end
   end
 
