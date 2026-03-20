@@ -1,33 +1,17 @@
-# Homebrew Tap for AllBeads
+# This tap has moved
 
-This is a Homebrew tap for [AllBeads](https://github.com/thrashr888/AllBeads) - a distributed protocol for agentic orchestration and communication.
+This tap has been consolidated into [thrashr888/homebrew-tap](https://github.com/thrashr888/homebrew-tap).
 
-## Installation
-
-```bash
-brew tap thrashr888/allbeads
-brew install allbeads
-```
-
-## Usage
-
-After installation, the `ab` command is available:
+## Migration
 
 ```bash
-ab init              # Initialize configuration
-ab context add .     # Add current repo as context
-ab stats             # View aggregated statistics
-ab tui               # Launch interactive dashboard
+# Remove this tap
+brew untap thrashr888/allbeads
+
+# Add the new unified tap
+brew tap thrashr888/tap
+
+# Reinstall
+brew install thrashr888/tap/allbeads
 ```
 
-## Updating
-
-```bash
-brew update
-brew upgrade allbeads
-```
-
-## More Information
-
-- [AllBeads Repository](https://github.com/thrashr888/AllBeads)
-- [Documentation](https://github.com/thrashr888/AllBeads#readme)
