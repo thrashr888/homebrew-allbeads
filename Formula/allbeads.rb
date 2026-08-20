@@ -8,6 +8,9 @@ class Allbeads < Formula
   version "0.10.0"
   license "MIT"
 
+  # This tap is deprecated. New releases are published to thrashr888/homebrew-tap.
+  deprecate! date: "2026-08-19", because: "has moved to the thrashr888/tap tap"
+
   on_macos do
     on_arm do
       url "https://github.com/thrashr888/AllBeads/releases/download/v#{version}/allbeads-macos-aarch64"
@@ -36,6 +39,13 @@ class Allbeads < Formula
 
   def caveats
     <<~EOS
+      This tap (thrashr888/allbeads) is deprecated and will not receive new releases.
+      Migrate to the unified tap:
+
+        brew untap thrashr888/allbeads
+        brew tap thrashr888/tap
+        brew install thrashr888/tap/allbeads
+
       AllBeads has been installed as 'allbeads'.
 
       To use the shorter 'ab' alias, add to your shell config:
